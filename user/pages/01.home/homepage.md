@@ -205,7 +205,7 @@ body_classes: homepage
             <span class="per">/ month, AUD</span>
           </div>
           <div class="tier-tagline">For sole traders and small teams who lodge BAS themselves.</div>
-          <a href="https://auth.saebooks.com.au/if/flow/default-source-enrollment/" class="btn btn-primary">Start Business plan</a>
+          <a href="https://app.saebooks.com.au/signup?plan=business" class="btn btn-primary">Start Business plan</a>
           <ul class="tier-feats">
             <li class="group">Everything in Community, plus</li>
             <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Bank feeds (SISS/ACSISS)</li>
@@ -225,7 +225,7 @@ body_classes: homepage
             <span class="per">/ month, AUD</span>
           </div>
           <div class="tier-tagline">For bookkeepers, growing teams, and anyone running payroll.</div>
-          <a href="https://auth.saebooks.com.au/if/flow/default-source-enrollment/" class="btn btn-secondary">Start Pro plan</a>
+          <a href="https://app.saebooks.com.au/signup?plan=pro" class="btn btn-secondary">Start Pro plan</a>
           <ul class="tier-feats">
             <li class="group">Everything in Business, plus</li>
             <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Multi-company / intercompany</li>
