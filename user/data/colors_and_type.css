@@ -1,0 +1,183 @@
+/* ============================================================
+   SAE Books — colors & type tokens
+   Drop-in CSS custom properties for marketing + product surfaces.
+   Mirrors the colour ramp specified in README.md → Visual foundations.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+  /* ── Brand ── */
+  --brand-navy:        #194291;  /* SAE Blue */
+  --brand-navy-700:    #133372;
+  --brand-navy-50:     #eaf0fa;
+  --brand-red:         #cc0000;  /* SAE Red */
+  --brand-red-700:     #a30000;
+  --brand-red-50:      #fdecec;
+
+  /* ── Neutrals (light) ── */
+  --ink:               #111827;
+  --body:              #374151;
+  --muted:             #6b7280;
+  --border:            #e5e7eb;
+  --border-strong:     #d1d5db;
+  --surface:           #ffffff;
+  --page:              #f9fafb;
+  --subtle:            #f3f4f6;
+
+  /* ── Semantic ── */
+  --success:           #0a5;
+  --success-50:        #e6f5ee;
+  --warn:              #b45309;
+  --warn-50:           #fdf3e7;
+  --danger:            #c33;
+
+  /* ── Spacing scale ── */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  96px;
+  --space-10: 128px;
+
+  /* ── Radii ── */
+  --radius-sm: 4px;
+  --radius:    8px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* ── Elevation ── */
+  --shadow-card:   0 4px 24px rgba(0, 0, 0, 0.08);
+  --shadow-pop:    0 16px 48px rgba(0, 0, 0, 0.12);
+
+  /* ── Type ── */
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* Step scale (clamp for fluid hero) */
+  --fs-display: clamp(2.75rem, 5.5vw, 4.5rem);  /* 44–72px */
+  --fs-h1:      clamp(2rem,  3.5vw, 2.75rem);   /* 32–44px */
+  --fs-h2:      clamp(1.5rem, 2.5vw, 2rem);     /* 24–32px */
+  --fs-h3:      1.25rem;   /* 20px */
+  --fs-h4:      1.0625rem; /* 17px */
+  --fs-body:    1rem;      /* 16px */
+  --fs-lead:    1.125rem;  /* 18px — hero subhead */
+  --fs-small:   0.875rem;  /* 14px */
+  --fs-meta:    0.75rem;   /* 12px */
+
+  /* Focus ring */
+  --focus-ring: 0 0 0 3px rgba(25, 66, 145, 0.22);
+
+  /* Transitions */
+  --t-fast: 150ms cubic-bezier(0.2, 0, 0.2, 1);
+}
+
+/* ── Dark mode (mirrors sauer.com.au prefers-color-scheme + toggle) ── */
+:root[data-theme="dark"],
+html.dark {
+  --ink:           #f3f4f6;
+  --body:          #d1d5db;
+  --muted:         #9ca3af;
+  --border:        #1f2937;
+  --border-strong: #374151;
+  --surface:       #111827;
+  --page:          #0b0f1a;
+  --subtle:        #161c2c;
+
+  --brand-navy-50: #15233f;
+  --brand-red-50:  #3a0e0e;
+
+  --shadow-card:   0 4px 24px rgba(0, 0, 0, 0.5);
+  --shadow-pop:    0 16px 48px rgba(0, 0, 0, 0.65);
+  --focus-ring:    0 0 0 3px rgba(120, 156, 230, 0.32);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink:           #f3f4f6;
+    --body:          #d1d5db;
+    --muted:         #9ca3af;
+    --border:        #1f2937;
+    --border-strong: #374151;
+    --surface:       #111827;
+    --page:          #0b0f1a;
+    --subtle:        #161c2c;
+    --brand-navy-50: #15233f;
+    --brand-red-50:  #3a0e0e;
+    --shadow-card:   0 4px 24px rgba(0, 0, 0, 0.5);
+    --shadow-pop:    0 16px 48px rgba(0, 0, 0, 0.65);
+    --focus-ring:    0 0 0 3px rgba(120, 156, 230, 0.32);
+  }
+}
+
+/* ============================================================
+   Base typography — semantic defaults
+   ============================================================ */
+
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  color: var(--body);
+  background: var(--page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 var(--space-4);
+  font-family: var(--font-sans);
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+h1 { font-size: var(--fs-h1); font-weight: 700; }
+h2 { font-size: var(--fs-h2); font-weight: 700; }
+h3 { font-size: var(--fs-h3); font-weight: 600; }
+h4 { font-size: var(--fs-h4); font-weight: 600; }
+
+.display {
+  font-size: var(--fs-display);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+p { margin: 0 0 var(--space-4); text-wrap: pretty; }
+.lead { font-size: var(--fs-lead); line-height: 1.55; color: var(--body); }
+.eyebrow {
+  font-size: var(--fs-meta);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.muted { color: var(--muted); }
+.meta  { font-size: var(--fs-meta); color: var(--muted); }
+code, kbd, pre, .mono { font-family: var(--font-mono); font-size: 0.9375em; }
+
+a {
+  color: var(--brand-navy);
+  text-decoration: none;
+  transition: color var(--t-fast);
+}
+a:hover { color: var(--brand-navy-700); text-decoration: underline; }
+html.dark a, :root[data-theme="dark"] a { color: #93a5d6; }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: var(--space-7) 0;
+}
+
+::selection { background: var(--brand-navy); color: #fff; }
+*:focus-visible { outline: none; box-shadow: var(--focus-ring); border-radius: var(--radius-sm); }

@@ -1,8 +1,8 @@
 title: 'SAE Books'
 default_lang: en
 metadata:
-  description: 'Open-source Australian accounting software — GST, BAS & STP-ready. Self-host or run on our cloud.'
-  keywords: 'accounting, australia, GST, BAS, STP, bookkeeping, open source, AGPL'
+  description: 'Self-hosted double-entry accounting for Australian small business. AGPLv3 source. GST and BAS-ready.'
+  keywords: 'accounting, australia, GST, BAS, STP, bookkeeping, open source, AGPL, self-hosted'
 taxonomies: [category, tag]
 summary:
   enabled: true
@@ -14,20 +14,5 @@ menu:
   -
     text: Home
     url: /
-  -
-    text: Features
-    url: /features
-  -
-    text: Pricing
-    url: /pricing
-  -
-    text: Docs
-    url: /docs
-  -
-    text: Community
-    url: 'https://discourse.saebooks.com.au'
-  -
-    text: Login
-    url: 'https://auth.saebooks.com.au/if/user/'
 home:
   alias: /

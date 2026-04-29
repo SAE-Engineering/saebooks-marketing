@@ -2,5 +2,8 @@ enabled: true
 css_inline: ''
 css_files:
   -
+    path: user://data/colors_and_type.css
+    priority: 200
+  -
     path: user://data/saebooks.css
     priority: 100
