@@ -1,0 +1,4 @@
+user/data/licenses.yaml
+user/accounts/
+*.bak
+.DS_Store

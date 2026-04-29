@@ -1,0 +1,61 @@
+enabled: true
+external_in_new_tab: false
+append_site_title: true
+logo_height: h-8
+colors:
+  text_style: 'text-gray-200'
+  brightness_lighter: '20'
+  brightness_darker: '20'
+  primary: '#4f9cff'
+appearance:
+  theme: dark
+  selector: true
+  storage: true
+  cookie: true
+section_classes: 'bg-transparent py-0'
+wrapper_spacing: 'w-full px-0'
+menu:
+  primary_location: header
+  primary_menu_levels: 2
+  mobile_nav: true
+  icon_classes: 'hidden md:inline-block h-4 w-4 opacity-75 mr-1'
+  login:
+    enabled: false
+header_bar:
+  background: dark
+  text: light
+  fixed: true
+  height: h-16
+hero:
+  display: false
+footer:
+  menu_enabled: true
+  menu:
+    - label: Features
+      link: /features
+    - label: Pricing
+      link: /pricing
+    - label: Docs
+      link: /docs
+    - label: Community
+      link: 'https://discourse.saebooks.com.au'
+    - label: Login
+      link: 'https://auth.saebooks.com.au/if/user/'
+  social_enabled: true
+  social:
+    - network: custom
+      custom:
+        network: GitHub
+        icon: 'tabler/brand-github.svg'
+        colors: 'bg-gray-900 text-gray-100'
+      link: https://github.com/SAE-Engineering
+      newtab: true
+    - network: custom
+      custom:
+        network: Forum
+        icon: 'tabler/messages.svg'
+        colors: 'bg-blue-900 text-gray-100'
+      link: https://discourse.saebooks.com.au
+      newtab: true
+  copyright: "© 2026 [SAE Books](https://saebooks.com.au) — built by [Sauer Pty Ltd ATF Saueesti Trust](https://sauer.com.au) (ABN 87 744 586 592). [AGPL-licensed](https://github.com/SAE-Engineering/saebooks)."
+notices: []
