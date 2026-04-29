@@ -2,3 +2,9 @@ user/data/licenses.yaml
 user/accounts/
 *.bak
 .DS_Store
+
+# Typhoon premium theme — track only our template overrides
+user/themes/typhoon/*
+!user/themes/typhoon/templates/
+user/themes/typhoon/templates/*
+!user/themes/typhoon/templates/homepage.html.twig

@@ -1,0 +1,38 @@
+{# Self-contained marketing template — bypasses Typhoon's chrome entirely.
+   Emits a minimal HTML document that loads only colors_and_type.css +
+   saebooks.css from user/data/, then drops in the page content as-is. #}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
+<head>
+  <meta charset="utf-8"/>
+  <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  {% if site.metadata.description %}<meta name="description" content="{{ site.metadata.description|e('html') }}"/>{% endif %}
+  {% if site.metadata.keywords %}<meta name="keywords" content="{{ site.metadata.keywords|e('html') }}"/>{% endif %}
+  <link rel="icon" type="image/png" href="/user/data/sae-books-logo.png"/>
+  <link rel="canonical" href="{{ page.url(true, true) }}"/>
+
+  <link rel="stylesheet" href="/user/data/colors_and_type.css"/>
+  <link rel="stylesheet" href="/user/data/saebooks.css"/>
+
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('sae-books-theme');
+        var theme = saved || 'auto';
+        var resolved = theme;
+        if (theme === 'auto') {
+          resolved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.classList.remove('light', 'dark');
+        document.documentElement.classList.add(resolved);
+        document.documentElement.setAttribute('data-theme', resolved);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body class="homepage">
+{{ page.content|raw }}
+</body>
+</html>
