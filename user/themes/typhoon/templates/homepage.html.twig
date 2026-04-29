@@ -13,8 +13,10 @@
   <link rel="icon" type="image/png" href="/user/data/sae-books-logo.png"/>
   <link rel="canonical" href="{{ page.url(true, true) }}"/>
 
-  <link rel="stylesheet" href="/user/data/colors_and_type.css"/>
-  <link rel="stylesheet" href="/user/data/saebooks.css"/>
+  {# Cache-bust via page mtime so browsers don't serve stale CSS after a deploy #}
+  {% set v = page.modified|default('1') %}
+  <link rel="stylesheet" href="/user/data/colors_and_type.css?v={{ v }}"/>
+  <link rel="stylesheet" href="/user/data/saebooks.css?v={{ v }}"/>
 
   <script>
     (function () {
