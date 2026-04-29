@@ -246,7 +246,7 @@ body_classes: homepage
             <span class="per">/ month</span>
           </div>
           <div class="tier-tagline">Custom-built solutions. We tailor SAE Books to your operation.</div>
-          <a href="mailto:richard@sauer.com.au?subject=SAE%20Books%20Enterprise%20enquiry" class="btn btn-secondary">Talk to us</a>
+          <a href="https://app.saebooks.com.au/contact?topic=enterprise" class="btn btn-secondary">Talk to us</a>
           <ul class="tier-feats">
             <li class="group">Everything in Pro, plus</li>
             <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Custom integrations &amp; modules</li>
@@ -379,7 +379,7 @@ $ docker compose up -d
         <ul>
           <li><a href="https://app.saebooks.com.au">Try the demo</a></li>
           <li><a href="#editions">Pricing &amp; plans</a></li>
-          <li><a href="mailto:richard@sauer.com.au?subject=SAE%20Books%20Enterprise%20enquiry">Talk to us (Enterprise)</a></li>
+          <li><a href="https://app.saebooks.com.au/contact?topic=enterprise">Talk to us (Enterprise)</a></li>
           <li><a href="https://github.com/SAE-Engineering/saebooks/blob/main/ROADMAP.md">Roadmap</a></li>
         </ul>
       </div>
@@ -396,7 +396,7 @@ $ docker compose up -d
         <h5>Company</h5>
         <ul>
           <li><a href="https://sauer.com.au">SAE Engineering</a></li>
-          <li><a href="mailto:richard@sauer.com.au">Contact</a></li>
+          <li><a href="https://app.saebooks.com.au/contact">Contact</a></li>
           <li><a href="https://sauer.com.au/privacy">Privacy</a></li>
           <li><a href="https://www.gnu.org/licenses/agpl-3.0.en.html">Licence (AGPLv3)</a></li>
         </ul>
