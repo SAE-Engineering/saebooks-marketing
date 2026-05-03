@@ -32,7 +32,7 @@ body_classes: homepage
           <svg class="lucide" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
       </div>
-      <a href="https://app.saebooks.com.au" class="btn btn-primary">Try the demo</a>
+    <a href="https://app.saebooks.com.au" class="btn btn-primary">Try the demo</a>
     </div>
   </div>
 </header>
@@ -202,10 +202,11 @@ body_classes: homepage
           <div class="tier-name">Business</div>
           <div class="tier-price">
             <span class="amount">$49</span>
-            <span class="per">/ month, AUD</span>
+            <span class="per">/ month, or $490 / year &mdash; AUD</span>
           </div>
           <div class="tier-tagline">For sole traders and small teams who lodge BAS themselves.</div>
-          <a href="https://app.saebooks.com.au/signup?plan=business" class="btn btn-primary">Start Business plan</a>
+          <a href="https://app.saebooks.com.au/signup?plan=business" class="btn btn-primary">Get started &mdash; Business</a>
+          <p class="tier-cta-note" style="margin-top:6px;font-size:0.8rem;opacity:0.75;">Free account required. No credit card on sign-up.</p>
           <ul class="tier-feats">
             <li class="group">Everything in Community, plus</li>
             <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Bank feeds (SISS/ACSISS)</li>
@@ -222,10 +223,11 @@ body_classes: homepage
           <div class="tier-name">Pro</div>
           <div class="tier-price">
             <span class="amount">$99</span>
-            <span class="per">/ month, AUD</span>
+            <span class="per">/ month, or $990 / year &mdash; AUD</span>
           </div>
           <div class="tier-tagline">For bookkeepers, growing teams, and anyone running payroll.</div>
-          <a href="https://app.saebooks.com.au/signup?plan=pro" class="btn btn-secondary">Start Pro plan</a>
+          <a href="https://app.saebooks.com.au/signup?plan=pro" class="btn btn-primary">Get started &mdash; Pro</a>
+          <p class="tier-cta-note" style="margin-top:6px;font-size:0.8rem;opacity:0.75;">Free account required. No credit card on sign-up.</p>
           <ul class="tier-feats">
             <li class="group">Everything in Business, plus</li>
             <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Multi-company / intercompany</li>
@@ -235,7 +237,7 @@ body_classes: homepage
             <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Signed LTS releases</li>
             <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Priority email support</li>
           </ul>
-          <div class="tier-foot">Unlimited users. Up to 10 companies.</div>
+          <div class="tier-foot">Unlimited users. Up to 10 companies. Cancel anytime.</div>
         </div>
 
         <div class="tier enterprise">
