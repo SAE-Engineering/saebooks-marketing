@@ -466,11 +466,14 @@ $ docker compose up -d
     var mql = window.matchMedia('(prefers-color-scheme: dark)');
 
     function applyTheme(choice) {
+      var resolved = (choice === 'auto') ? (mql.matches ? 'dark' : 'light') : choice;
       if (choice === 'auto') {
         root.removeAttribute('data-theme');
       } else {
         root.setAttribute('data-theme', choice);
       }
+      root.classList.remove('light', 'dark');
+      root.classList.add(resolved);
       document.querySelectorAll('.theme-switch button[data-theme-value]').forEach(function(b) {
         b.setAttribute('aria-pressed', String(b.dataset.themeValue === choice));
       });
