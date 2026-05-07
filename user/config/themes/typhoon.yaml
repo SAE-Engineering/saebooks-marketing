@@ -57,5 +57,5 @@ footer:
         colors: 'bg-blue-900 text-gray-100'
       link: https://discourse.saebooks.com.au
       newtab: true
-  copyright: "© 2026 [SAE Books](https://saebooks.com.au) — built by [Sauer Pty Ltd ATF Saueesti Trust](https://sauer.com.au) (ABN 87 744 586 592). [AGPL-licensed](https://github.com/SAE-Engineering/saebooks)."
+  copyright: "© 2026 [SAE Books](https://saebooks.com.au) — built by [Sauer Pty Ltd ATF Saueesti Trust](https://sauer.com.au) (ABN 87 744 586 592). [AGPL-licensed](https://github.com/saebooks/saebooks)."
 notices: []

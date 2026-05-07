@@ -59,4 +59,4 @@ Visitors don't need to authenticate to read the site.
 ## Licence
 
 Site **content** © Sauer Pty Ltd ATF Saueesti Trust (ABN 87 744 586 592).
-SAE Books itself is [AGPL-licensed](https://github.com/SAE-Engineering/saebooks).
+SAE Books itself is [AGPL-licensed](https://github.com/saebooks/saebooks).

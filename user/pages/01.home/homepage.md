@@ -1,5 +1,5 @@
 ---
-title: 'SAE Books — Self-hosted accounting that does BAS'
+title: 'SAE Books — The API-first accounting ledger'
 menu: Home
 autoseo:
     enabled: false
@@ -41,13 +41,13 @@ body_classes: homepage
   <div class="container">
     <div class="hero-grid">
       <div>
-        <h1>Self-hosted accounting<br>that does <span class="red">BAS.</span></h1>
-        <p class="lead">Double-entry books for Australian small business. AGPL source, your database, no subscription tax. Run it on your laptop, your NAS, or let us host it.</p>
+        <h1>Built for the next 20 years.<br>Not the <span class="red">last 20.</span></h1>
+        <p class="lead">SAE Books is an API-first accounting ledger you can build a business on. Every screen is a thin layer over a public REST API &mdash; the same one your scripts, integrations, and partner services hit. Self-hosted, double-entry, AGPL.</p>
         <div class="hero-ctas">
           <a href="https://app.saebooks.com.au" class="btn btn-primary btn-lg">Try the demo
             <svg class="lucide" viewBox="0 0 24 24" style="width:14px;height:14px;"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
-          <a href="#editions" class="btn btn-secondary btn-lg">See pricing</a>
+          <a href="https://dev.saebooks.com.au" class="btn btn-secondary btn-lg">Read the API docs</a>
         </div>
         <div class="hero-meta">
           <span class="pill"><span class="dot"></span>Free Community edition</span>
@@ -55,6 +55,7 @@ body_classes: homepage
             <svg class="lucide" viewBox="0 0 24 24" style="width:14px;height:14px;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             AGPLv3 on GitHub
           </span>
+          <span class="pill">REST &middot; OpenAPI &middot; Webhooks</span>
         </div>
       </div>
       <div class="hero-screenshot" aria-label="BAS report preview">
@@ -95,24 +96,24 @@ body_classes: homepage
     <div class="three-up">
       <div class="point">
         <div class="icon">
+          <svg class="lucide" viewBox="0 0 24 24" style="width:22px;height:22px;"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>API-first, not GUI-first</h3>
+        <p>The web UI is a thin client over a public REST API. Anything you can do in a browser, your scripts can do too &mdash; same endpoints, same auth, same OpenAPI schema. No screen-scraping, no &ldquo;export to CSV and pray&rdquo;.</p>
+      </div>
+      <div class="point">
+        <div class="icon">
+          <svg class="lucide" viewBox="0 0 24 24" style="width:22px;height:22px;"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        </div>
+        <h3>Service-oriented by default</h3>
+        <p>The accounting ledger does one thing well: keeps the books. Document vault, bank-feed relay, lodgement, payroll &mdash; all separate services that talk to it over the API. Swap any of them; the books stay yours.</p>
+      </div>
+      <div class="point">
+        <div class="icon">
           <svg class="lucide" viewBox="0 0 24 24" style="width:22px;height:22px;"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
         </div>
-        <h3>Own your data</h3>
-        <p>Your books live in a Postgres database you control. Local machine, your own server, a VPS &mdash; anywhere Docker runs. Full export in CSV, JSON, OFX, QIF, or a complete DB dump.</p>
-      </div>
-      <div class="point">
-        <div class="icon">
-          <svg class="lucide" viewBox="0 0 24 24" style="width:22px;height:22px;"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 14.14 14.14"/></svg>
-        </div>
-        <h3>No subscription lock-in</h3>
-        <p>Community is free under AGPLv3, forever. Paid tiers start at $49/mo with no seat fees, no surprise hikes, and no contract you can&rsquo;t get out of. Cancel and your data walks with you.</p>
-      </div>
-      <div class="point">
-        <div class="icon">
-          <svg class="lucide" viewBox="0 0 24 24" style="width:22px;height:22px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></svg>
-        </div>
-        <h3>Built for AU GST/BAS</h3>
-        <p>Not a US product with a localisation pack. The chart of accounts, tax codes, and BAS labels ship from the Odoo AU localisation, ready to lodge from day one.</p>
+        <h3>Owned by you, forever</h3>
+        <p>Your books live in a Postgres database you control. AGPLv3 means the source is yours; full export in CSV, JSON, OFX, QIF, or a complete DB dump. Cancel and your data walks with you &mdash; you never lose access to your own ledger.</p>
       </div>
     </div>
   </div>
@@ -122,24 +123,29 @@ body_classes: homepage
   <div class="container">
     <div class="sh">
       <span class="eyebrow brand">What&rsquo;s in the box</span>
-      <h2>Everything you actually need to run AU books.</h2>
-      <p>Eight features that matter. Tagged where they need a paid tier.</p>
+      <h2>A platform first. A BAS app second.</h2>
+      <p>Multi-company ledger, audit trail, period locks, FX. The Australian tax bits sit on top of that &mdash; not the other way round.</p>
     </div>
     <div class="feature-grid">
       <div class="tile">
-        <div class="icon"><svg class="lucide" viewBox="0 0 24 24"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg></div>
-        <h4>Bank feeds <span class="badge">Business</span></h4>
-        <p>SISS/ACSISS-backed daily feeds for every major Australian bank.</p>
+        <div class="icon"><svg class="lucide" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+        <h4>Public REST API</h4>
+        <p>Every screen is a thin client over the same OpenAPI-documented endpoints your scripts call. Bearer tokens, webhooks, idempotency keys.</p>
       </div>
       <div class="tile">
-        <div class="icon"><svg class="lucide" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
-        <h4>ABR lookup <span class="badge">Business</span></h4>
-        <p>One-field ABN/ACN lookup auto-fills supplier and customer records.</p>
+        <div class="icon"><svg class="lucide" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/></svg></div>
+        <h4>Multi-company <span class="badge">Pro</span></h4>
+        <p>Run multiple entities under one login. Reciprocal journals. Consolidated reports. Row-level isolation, not just a filter.</p>
       </div>
       <div class="tile">
-        <div class="icon"><svg class="lucide" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="5" rx="2"/><path d="M4 9v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9"/><path d="M10 13h4"/></svg></div>
-        <h4>Fixed asset register <span class="badge">Business</span></h4>
-        <p>Track depreciation schedules. Disposal, impairment, and write-down events.</p>
+        <div class="icon"><svg class="lucide" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <h4>Period locks &amp; audit ledger</h4>
+        <p>Close a period, lock it, audit it. Every change to a posted journal leaves a tamper-evident trail.</p>
+      </div>
+      <div class="tile">
+        <div class="icon"><svg class="lucide" viewBox="0 0 24 24"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg></div>
+        <h4>FX revaluation <span class="badge">Pro</span></h4>
+        <p>Multi-currency posting with end-of-period revaluation. ECB and RBA daily rates included.</p>
       </div>
       <div class="tile">
         <div class="icon"><svg class="lucide" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></svg></div>
@@ -147,24 +153,19 @@ body_classes: homepage
         <p>Generate the BAS, review the worksheet, lodge it. Settlement journals are automatic.</p>
       </div>
       <div class="tile">
-        <div class="icon"><svg class="lucide" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/></svg></div>
-        <h4>Multi-company <span class="badge">Pro</span></h4>
-        <p>Run multiple entities under one login. Reciprocal journals. Consolidated reports.</p>
-      </div>
-      <div class="tile">
-        <div class="icon"><svg class="lucide" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
-        <h4>Period locks</h4>
-        <p>Close a period, lock it, audit it. Reconciliation locks freeze rows even in open-journal mode.</p>
-      </div>
-      <div class="tile">
         <div class="icon"><svg class="lucide" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
         <h4>STP payroll <span class="badge">Pro</span></h4>
         <p>Single Touch Payroll lodgement, super, payslips. STP Phase 2 ready.</p>
       </div>
       <div class="tile">
-        <div class="icon"><svg class="lucide" viewBox="0 0 24 24"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg></div>
-        <h4>FX revaluation <span class="badge">Pro</span></h4>
-        <p>Multi-currency posting with end-of-period revaluation.</p>
+        <div class="icon"><svg class="lucide" viewBox="0 0 24 24"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg></div>
+        <h4>Bank feeds <span class="badge">Business</span></h4>
+        <p>SISS/ACSISS-backed daily feeds for every major Australian bank. Delivered as a separate relay service.</p>
+      </div>
+      <div class="tile">
+        <div class="icon"><svg class="lucide" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+        <h4>ABR lookup &amp; fixed assets <span class="badge">Business</span></h4>
+        <p>One-field ABN/ACN lookup auto-fills contacts. Fixed asset register with depreciation schedules, disposals, and write-downs.</p>
       </div>
     </div>
   </div>
@@ -184,7 +185,7 @@ body_classes: homepage
           <div class="tier-name">Community</div>
           <div class="tier-price"><span class="free">Free</span></div>
           <div class="tier-tagline">Single-company self-hosted. No licence key, no nag screens.</div>
-          <a href="https://github.com/SAE-Engineering/saebooks" class="btn btn-secondary">Download from GitHub</a>
+          <a href="https://github.com/saebooks/saebooks" class="btn btn-secondary">Download from GitHub</a>
           <ul class="tier-feats">
             <li class="group">Core books</li>
             <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Chart of accounts, journals, GL</li>
@@ -270,9 +271,9 @@ body_classes: homepage
 <section>
   <div class="container">
     <div class="sh">
-      <span class="eyebrow brand">Inside the app</span>
-      <h2>Desktop-density. Keyboard-driven.</h2>
-      <p>Built for people who do this every week. Not a &ldquo;modern dashboard&rdquo; with three numbers and a smiley face.</p>
+      <span class="eyebrow brand">Anatomy</span>
+      <h2>An accounting core. A constellation of services.</h2>
+      <p>The ledger does the books. Everything else &mdash; the document vault, bank feeds, lodgement &mdash; is a separate service that talks to it over the API. Replace any of them; the books stay yours.</p>
     </div>
     <div class="shots-row">
       <div class="shot">
@@ -346,6 +347,10 @@ $ docker compose up -d
     </div>
     <div class="faq-wrap">
       <details class="faq" open>
+        <summary>What does &ldquo;API-first&rdquo; actually buy me?<span class="chev"><svg class="lucide" viewBox="0 0 24 24" style="width:18px;height:18px;"><polyline points="6 9 12 15 18 9"/></svg></span></summary>
+        <p>Every action in the UI is a documented REST call. Want to push 200 invoices from your job-management system? Hit <code>POST /api/v1/invoices</code>. Want a webhook when a bill is approved? Subscribe. Want to retire the UI entirely and drive it from a script? You can. The accounting ledger is the product; the screens are one of many possible clients. OpenAPI schema lives at <a href="https://dev.saebooks.com.au">dev.saebooks.com.au</a>.</p>
+      </details>
+      <details class="faq">
         <summary>What does AGPLv3 mean for my business?<span class="chev"><svg class="lucide" viewBox="0 0 24 24" style="width:18px;height:18px;"><polyline points="6 9 12 15 18 9"/></svg></span></summary>
         <p>Run it however you want &mdash; internally, with clients, anywhere. The licence only kicks in if you modify the code and offer the modified version as a network service to others. Most users will never trigger it. Hosting it for your own clients is fine; selling a hosted SAE Books fork as a SaaS without contributing back is not.</p>
       </details>
@@ -374,7 +379,7 @@ $ docker compose up -d
     <div class="foot-grid">
       <div class="foot-col foot-brand">
         <a href="/" class="wordmark"><img src="/user/data/sae-books-logo.png" alt="SAE Books" style="height:40px;"></a>
-        <p class="blurb">Self-hosted double-entry accounting for Australian small business. AGPLv3, owned by you, BAS-ready out of the box.</p>
+        <p class="blurb">An API-first, self-hosted accounting ledger for Australian small business. AGPLv3, owned by you, with BAS, STP, and bank feeds delivered as services.</p>
       </div>
       <div class="foot-col">
         <h5>Product</h5>
@@ -382,7 +387,7 @@ $ docker compose up -d
           <li><a href="https://app.saebooks.com.au">Try the demo</a></li>
           <li><a href="#editions">Pricing &amp; plans</a></li>
           <li><a href="https://app.saebooks.com.au/contact?topic=enterprise">Talk to us (Enterprise)</a></li>
-          <li><a href="https://github.com/SAE-Engineering/saebooks/blob/main/ROADMAP.md">Roadmap</a></li>
+          <li><a href="https://github.com/saebooks/saebooks/blob/main/ROADMAP.md">Roadmap</a></li>
         </ul>
       </div>
       <div class="foot-col">
@@ -390,8 +395,8 @@ $ docker compose up -d
         <ul>
           <li><a href="https://dev.saebooks.com.au">Docs</a></li>
           <li><a href="https://discourse.saebooks.com.au">Forum</a></li>
-          <li><a href="https://github.com/SAE-Engineering/saebooks">GitHub</a></li>
-          <li><a href="https://github.com/SAE-Engineering/saebooks/blob/main/CHANGELOG.md">Changelog</a></li>
+          <li><a href="https://github.com/saebooks/saebooks">GitHub</a></li>
+          <li><a href="https://github.com/saebooks/saebooks/blob/main/CHANGELOG.md">Changelog</a></li>
         </ul>
       </div>
       <div class="foot-col">

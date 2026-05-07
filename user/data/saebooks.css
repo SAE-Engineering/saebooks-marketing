@@ -254,7 +254,7 @@ nav.primary a:hover { color: var(--brand-navy); text-decoration: none; }
 .split-card h3 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
 .split-card p { color: var(--body); margin-bottom: 16px; }
 .split-card pre {
-  background: var(--ink); color: #e5e7eb;
+  background: #111827; color: #e5e7eb;
   font-family: var(--font-mono); font-size: 12px;
   padding: 12px 14px; border-radius: var(--radius);
   overflow-x: auto;
