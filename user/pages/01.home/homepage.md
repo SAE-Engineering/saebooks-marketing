@@ -377,15 +377,6 @@ $ docker compose up -d
   </div>
 </section>
 
-<section class="band">
-  <div class="container">
-    <div class="quote-block">
-      <blockquote class="quote-placeholder">Placeholder pull-quote &mdash; to be sourced from a real customer once the beta cohort is in. Suggested length: &le; 30 words. No marketing superlatives.</blockquote>
-      <div class="attr">&mdash; Name, Role &middot; Business, City</div>
-    </div>
-  </div>
-</section>
-
 <section id="faq">
   <div class="container">
     <div class="sh">
