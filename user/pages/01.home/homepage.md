@@ -285,15 +285,54 @@ body_classes: homepage
     </div>
     <div class="shots-row">
       <div class="shot">
-        <div class="shot-img">Screenshot &mdash; OpenAPI explorer</div>
+        <div class="shot-mock shot-mock-openapi">
+          <div class="sm-row"><span class="sm-method get">GET</span><span class="sm-path">/api/v1/health</span></div>
+          <div class="sm-row"><span class="sm-method get">GET</span><span class="sm-path">/api/v1/contacts</span></div>
+          <div class="sm-row sm-expanded"><span class="sm-method post">POST</span><span class="sm-path">/api/v1/contacts</span></div>
+          <div class="sm-row sm-param"><span class="sm-key">name</span> string<span class="sm-req">required</span></div>
+          <div class="sm-row sm-param"><span class="sm-key">abn</span> string &nbsp; <span class="sm-key">email</span> string</div>
+          <div class="sm-row"><span class="sm-method get">GET</span><span class="sm-path">/api/v1/invoices</span></div>
+          <div class="sm-row"><span class="sm-method post">POST</span><span class="sm-path">/api/v1/invoices</span></div>
+          <div class="sm-row"><span class="sm-method del">DEL</span><span class="sm-path">/api/v1/invoices/{id}</span></div>
+        </div>
         <div class="shot-cap"><h4>OpenAPI explorer</h4><p>Browse, try, and copy every endpoint at <a href="https://dev.saebooks.com.au">dev.saebooks.com.au</a>. Bearer-token auth, idempotency keys, page cursors.</p></div>
       </div>
       <div class="shot">
-        <div class="shot-img">Screenshot &mdash; Webhook deliveries</div>
+        <div class="shot-mock shot-mock-webhooks">
+          <div class="sm-row"><span class="sm-time">14:32:08</span><span class="sm-evt">invoice.created</span><span class="sm-id">INV-001047</span><span class="sm-status ok">200</span><span class="sm-lat">38ms</span></div>
+          <div class="sm-row"><span class="sm-time">14:31:55</span><span class="sm-evt">bill.approved</span><span class="sm-id">BL-000812</span><span class="sm-status ok">200</span><span class="sm-lat">24ms</span></div>
+          <div class="sm-row"><span class="sm-time">14:31:42</span><span class="sm-evt">payment.matched</span><span class="sm-id">PY-002201</span><span class="sm-status ok">200</span><span class="sm-lat">19ms</span></div>
+          <div class="sm-row"><span class="sm-time">14:30:15</span><span class="sm-evt">invoice.created</span><span class="sm-id">retry 1/5</span><span class="sm-status warn">502</span><span class="sm-lat">82ms</span></div>
+          <div class="sm-row"><span class="sm-time">14:29:58</span><span class="sm-evt">invoice.created</span><span class="sm-id">INV-001045</span><span class="sm-status ok">200</span><span class="sm-lat">41ms</span></div>
+          <div class="sm-row"><span class="sm-time">14:29:30</span><span class="sm-evt">contact.updated</span><span class="sm-id">4f3a&hellip;</span><span class="sm-status ok">200</span><span class="sm-lat">12ms</span></div>
+          <div class="sm-row"><span class="sm-time">14:28:12</span><span class="sm-evt">je.posted</span><span class="sm-id">j_91f2&hellip;</span><span class="sm-status ok">200</span><span class="sm-lat">15ms</span></div>
+        </div>
         <div class="shot-cap"><h4>Webhook deliveries</h4><p>Subscribe to <code>invoice.created</code>, <code>bill.approved</code>, <code>payment.matched</code>. Signed payloads, retries with exponential backoff, full delivery log.</p></div>
       </div>
       <div class="shot">
-        <div class="shot-img">Screenshot &mdash; Audit ledger</div>
+        <div class="shot-mock shot-mock-audit">
+          <div class="sm-entry">
+            <div class="sm-avatar">RS</div>
+            <div class="sm-entry-body">
+              <div class="sm-entry-h"><span class="sm-actor">Richard Sauer</span><span class="sm-stamp">14:32:08</span></div>
+              <div class="sm-act">Updated INV-001047 &middot; status: <span class="sm-diff-old">draft</span> <span class="sm-diff-new">approved</span></div>
+            </div>
+          </div>
+          <div class="sm-entry">
+            <div class="sm-avatar api">API</div>
+            <div class="sm-entry-body">
+              <div class="sm-entry-h"><span class="sm-actor">curl/8.5</span><span class="sm-stamp">14:31:55</span></div>
+              <div class="sm-act">Created BL-000812 via <code>POST /api/v1/bills</code><br><span class="sm-stamp">idempotency 0193c8b4&hellip;</span></div>
+            </div>
+          </div>
+          <div class="sm-entry">
+            <div class="sm-avatar bot">JE</div>
+            <div class="sm-entry-body">
+              <div class="sm-entry-h"><span class="sm-actor">period-close-bot</span><span class="sm-stamp">14:28:12</span></div>
+              <div class="sm-act">Posted JE j_91f2 (period 2026-Q1, locked)</div>
+            </div>
+          </div>
+        </div>
         <div class="shot-cap"><h4>Audit ledger</h4><p>Every change &mdash; UI or API &mdash; tagged with actor, request id, before/after diff. Period-locked rows are immutable end-to-end.</p></div>
       </div>
     </div>

@@ -268,6 +268,67 @@ nav.primary a:hover { color: var(--brand-navy); text-decoration: none; }
 .shot-cap h4 { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
 .shot-cap p { font-size: 13px; color: var(--muted); margin: 0; line-height: 1.5; }
 
+/* Inline UI mocks for the Anatomy section */
+.shot-mock {
+  aspect-ratio: 16 / 10;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  line-height: 1.55;
+  color: var(--ink);
+  padding: 12px 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.sm-row {
+  display: flex; align-items: center; gap: 8px;
+  padding: 4px 0;
+  border-bottom: 1px dashed var(--border);
+  white-space: nowrap;
+}
+.sm-row:last-child { border-bottom: none; }
+.sm-method {
+  font-weight: 700; font-size: 9px; letter-spacing: 0.05em;
+  padding: 1px 5px; border-radius: 3px; flex-shrink: 0;
+  font-family: var(--font-sans);
+}
+.sm-method.get { color: var(--brand-navy); background: var(--brand-navy-50); }
+.sm-method.post { color: var(--success); background: rgba(0,170,85,0.12); }
+.sm-method.put { color: #92400e; background: rgba(245,158,11,0.18); }
+.sm-method.del { color: var(--brand-red); background: var(--brand-red-50); }
+.sm-path { color: var(--ink); }
+.sm-row.sm-expanded { background: var(--subtle); margin: 0 -14px; padding: 4px 14px; border-radius: 0; }
+.sm-param { padding-left: 64px; color: var(--muted); font-size: 10px; padding-top: 2px; padding-bottom: 2px; border: none; }
+.sm-param .sm-key { color: var(--ink); }
+.sm-param .sm-req { color: var(--brand-red); font-size: 9px; margin-left: 4px; }
+
+/* webhook deliveries */
+.sm-time { color: var(--muted); width: 56px; flex-shrink: 0; }
+.sm-evt { color: var(--brand-navy); flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.sm-id { color: var(--muted); font-size: 9.5px; }
+.sm-status { font-weight: 600; font-size: 9.5px; padding: 1px 5px; border-radius: 3px; flex-shrink: 0; font-family: var(--font-sans); letter-spacing: 0.04em; }
+.sm-status.ok { color: var(--success); background: rgba(0,170,85,0.12); }
+.sm-status.warn { color: #92400e; background: rgba(245,158,11,0.18); }
+.sm-status.err { color: var(--brand-red); background: var(--brand-red-50); }
+.sm-lat { color: var(--muted); width: 36px; text-align: right; flex-shrink: 0; }
+
+/* audit ledger */
+.sm-entry { padding: 5px 0; border-bottom: 1px dashed var(--border); display: flex; gap: 8px; }
+.sm-entry:last-child { border-bottom: none; }
+.sm-avatar { width: 22px; height: 22px; border-radius: 50%; background: var(--brand-navy); color: #fff; font-family: var(--font-sans); font-weight: 700; font-size: 9.5px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.sm-avatar.api { background: var(--success); }
+.sm-avatar.bot { background: var(--brand-red); }
+.sm-entry-body { flex: 1; min-width: 0; }
+.sm-entry-h { display: flex; gap: 8px; align-items: baseline; }
+.sm-actor { font-family: var(--font-sans); font-weight: 600; color: var(--ink); font-size: 11px; }
+.sm-stamp { color: var(--muted); font-size: 9.5px; }
+.sm-act { color: var(--body); font-size: 10px; }
+.sm-diff-old { color: var(--brand-red); text-decoration: line-through; }
+.sm-diff-new { color: var(--success); }
+
 /* ── Split (self-host vs hosted) ── */
 .split { display: grid; gap: 32px; grid-template-columns: 1fr; }
 @media (min-width: 768px) { .split { grid-template-columns: 1fr 1fr; gap: 48px; } }
