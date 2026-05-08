@@ -1,5 +1,5 @@
 ---
-title: 'SAE Books — The API-first accounting ledger'
+title: 'SAE Books — Your data, your API, your server'
 menu: Home
 autoseo:
     enabled: false
@@ -41,8 +41,8 @@ body_classes: homepage
   <div class="container">
     <div class="hero-grid">
       <div>
-        <h1>Built for the next 20 years. Evolving, not built on legacy.</h1>
-        <p class="lead">SAE Books is an API-first accounting ledger you can build a business on. Every screen is a thin layer over a public REST API &mdash; the same one your scripts, integrations, and partner services hit. Self-hosted, double-entry, AGPL.</p>
+        <h1>Your data, your API, your server. Built for the next 20 years, not the last 20.</h1>
+        <p class="lead">SAE Books is modern accounting infrastructure: an API-first ledger you own and control. Every screen is a thin client over a public REST API &mdash; the same one your scripts, automations, and partner services hit. On-prem licensed. Self-hosted by default. No vendor lock-in, no data held hostage, no price surprise when they feel like it.</p>
         <div class="hero-ctas">
           <a href="https://dev.saebooks.com.au/getting-started/quickstart/" class="btn btn-primary btn-lg">Get Cashbook free (install on your device)
             <svg class="lucide" viewBox="0 0 24 24" style="width:14px;height:14px;"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
@@ -58,6 +58,7 @@ body_classes: homepage
             AGPLv3 on GitHub
           </span>
           <span class="pill">REST &middot; OpenAPI &middot; Webhooks</span>
+          <span class="pill">Australian data residency</span>
         </div>
       </div>
       <div class="hero-screenshot" aria-label="API request preview">
@@ -99,7 +100,7 @@ body_classes: homepage
   <div class="container">
     <div class="sh">
       <span class="eyebrow brand">Why SAE Books</span>
-      <h2>Three reasons. No bullshit.</h2>
+      <h2>Three things major cloud vendors can't say.</h2>
     </div>
     <div class="three-up">
       <div class="point">
@@ -120,8 +121,8 @@ body_classes: homepage
         <div class="icon">
           <svg class="lucide" viewBox="0 0 24 24" style="width:22px;height:22px;"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
         </div>
-        <h3>Owned by you, forever</h3>
-        <p>Your books live in a Postgres database you control. AGPLv3 means the source is yours; full export in CSV, JSON, OFX, QIF, or a complete DB dump. Cancel and your data walks with you &mdash; you never lose access to your own ledger.</p>
+        <h3>Your data. Permanently yours.</h3>
+        <p>Your books live in a Postgres database you control. AGPLv3 means the source is yours. Full export to CSV, JSON, OFX, or a complete DB dump &mdash; cancel any time and your data walks with you. No vendor can revoke access to your own ledger, ever.</p>
       </div>
     </div>
   </div>
@@ -179,6 +180,11 @@ body_classes: homepage
         <div class="icon"><svg class="lucide" viewBox="0 0 24 24"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></div>
         <h4>Purchase orders</h4>
         <p>Issue a PO, receive in batches, partial-bill, close. The state machine mirrors how procurement actually works &mdash; nothing hits the GL until you convert a receipt to a bill.</p>
+      </div>
+      <div class="tile">
+        <div class="icon"><svg class="lucide" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8"/><path d="M8 17h8"/></svg></div>
+        <h4>Immutable invoice snapshots</h4>
+        <p>What you sent is what you sent. The rendered PDF is stored byte-identical in the document vault &mdash; reprintable forever, unchanged. Built for dispute defence. Major cloud vendors silently rewrite the original when terms or notes change. SAE Books doesn&rsquo;t.</p>
       </div>
       <div class="tile">
         <div class="icon"><svg class="lucide" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg></div>
@@ -310,8 +316,8 @@ body_classes: homepage
   <div class="container">
     <div class="sh">
       <span class="eyebrow brand">Anatomy</span>
-      <h2>An accounting core. A constellation of services.</h2>
-      <p>The ledger does the books. Everything else &mdash; the document vault, bank feeds, lodgement &mdash; is a separate service that talks to it over the API. Replace any of them; the books stay yours.</p>
+      <h2>An accounting core. A service orbit around it.</h2>
+      <p>The ledger does the books. Everything else &mdash; the document vault, bank feeds, lodgement, payroll &mdash; is an independent service that talks to it over the API. Replace any of them, build your own, or wire in third-party tools. The books stay yours regardless.</p>
     </div>
     <div class="shots-row">
       <div class="shot">
@@ -435,6 +441,10 @@ $ docker compose up -d
         <p>Tagged Docker images. <code>docker compose pull &amp;&amp; up -d</code>. Migrations run on boot. We test every migration against a parallel-run copy of Richard&rsquo;s own books before publishing &mdash; so if it eats your data, it eats his first.</p>
       </details>
       <details class="faq">
+        <summary>Why not just use a major cloud accounting product?<span class="chev"><svg class="lucide" viewBox="0 0 24 24" style="width:18px;height:18px;"><polyline points="6 9 12 15 18 9"/></svg></span></summary>
+        <p>The major cloud vendors share three assumptions: your data lives on their servers, their UI is the only interface, and switching costs you everything. That&rsquo;s a reasonable trade-off until you need to automate, integrate, or leave. SAE Books makes different assumptions: the ledger is a Postgres database you own (AGPLv3), every action is an API call you can script, and your data exports completely at any time. Your accountant can stay in their preferred tool via two-way sync &mdash; Xero adapter ships built-in. Nothing is held hostage to keep you subscribed.</p>
+      </details>
+      <details class="faq">
         <summary>What if something goes wrong?<span class="chev"><svg class="lucide" viewBox="0 0 24 24" style="width:18px;height:18px;"><polyline points="6 9 12 15 18 9"/></svg></span></summary>
         <p>Community: GitHub issues + the forum at <a href="https://discourse.saebooks.com.au">discourse.saebooks.com.au</a>. Mostly self-supported. Business and Pro: priority email, signed LTS branches, named upgrade window. Enterprise: SLA-backed, named contacts, agreed response times. For all tiers: the data is a Postgres database, so any DBA on the planet can help you in a pinch. Nothing is locked in a vendor format.</p>
       </details>
@@ -447,7 +457,7 @@ $ docker compose up -d
     <div class="foot-grid">
       <div class="foot-col foot-brand">
         <a href="/" class="wordmark"><img src="/user/data/sae-books-logo.png" alt="SAE Books" style="height:40px;"></a>
-        <p class="blurb">An API-first, self-hosted accounting ledger for Australian small business. AGPLv3, owned by you. STP from Business; BAS e-lodgement and bank feeds from Enterprise as we onboard.</p>
+        <p class="blurb">Modern accounting infrastructure for Australian small business. API-first, on-prem licensed, AGPLv3. Your data, your server, your Postgres database &mdash; no vendor lock-in. STP from Business; BAS e-lodgement and bank feeds from Enterprise.</p>
       </div>
       <div class="foot-col">
         <h5>Product</h5>
