@@ -173,6 +173,16 @@ body_classes: homepage
         <h4>ABR lookup &amp; fixed assets <span class="badge">Business</span></h4>
         <p>One-field ABN/ACN lookup auto-fills contacts. Fixed asset register with depreciation schedules, disposals, and write-downs &mdash; both wired through the public API.</p>
       </div>
+      <div class="tile">
+        <div class="icon"><svg class="lucide" viewBox="0 0 24 24"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></div>
+        <h4>Purchase orders</h4>
+        <p>Issue a PO, receive in batches, partial-bill, close. The state machine mirrors how procurement actually works &mdash; nothing hits the GL until you convert a receipt to a bill.</p>
+      </div>
+      <div class="tile">
+        <div class="icon"><svg class="lucide" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg></div>
+        <h4>Proration that math-proofs itself</h4>
+        <p>First-period sign-ups, mid-period plan changes, deferred revenue. Three primitives that every recurring-revenue ledger needs &mdash; full <code>Decimal</code> precision, no rounding drift.</p>
+      </div>
     </div>
   </div>
 </section>
