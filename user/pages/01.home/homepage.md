@@ -32,7 +32,7 @@ body_classes: homepage
           <svg class="lucide" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
       </div>
-    <a href="https://app.saebooks.com.au/signup?plan=cashbook" class="btn btn-primary">Start free</a>
+    <a href="https://dev.saebooks.com.au/getting-started/quickstart/" class="btn btn-primary">Get Cashbook free</a>
     </div>
   </div>
 </header>
@@ -44,14 +44,14 @@ body_classes: homepage
         <h1>Built for the next 20 years. Evolving, not built on legacy.</h1>
         <p class="lead">SAE Books is an API-first accounting ledger you can build a business on. Every screen is a thin layer over a public REST API &mdash; the same one your scripts, integrations, and partner services hit. Self-hosted, double-entry, AGPL.</p>
         <div class="hero-ctas">
-          <a href="https://app.saebooks.com.au/signup?plan=cashbook" class="btn btn-primary btn-lg">Start free Cashbook
+          <a href="https://dev.saebooks.com.au/getting-started/quickstart/" class="btn btn-primary btn-lg">Get Cashbook free (install on your device)
             <svg class="lucide" viewBox="0 0 24 24" style="width:14px;height:14px;"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
           <a href="https://app.saebooks.com.au" class="btn btn-secondary btn-lg">Try the demo</a>
           <a href="https://dev.saebooks.com.au" class="btn btn-secondary btn-lg">Read the API docs</a>
         </div>
         <div class="hero-meta">
-          <span class="pill"><span class="dot"></span>Free Cashbook &mdash; hosted</span>
+          <span class="pill"><span class="dot"></span>Free Cashbook &mdash; on your device</span>
           <span class="pill"><span class="dot"></span>Free Community &mdash; self-host</span>
           <span class="pill">
             <svg class="lucide" viewBox="0 0 24 24" style="width:14px;height:14px;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
@@ -194,7 +194,7 @@ body_classes: homepage
     <div class="sh">
       <span class="eyebrow brand">Pricing</span>
       <h2>One codebase. Pick the licence that fits.</h2>
-      <p>Two ways to start free: hosted Cashbook for sole traders, or self-hosted Community for the full double-entry stack. Same codebase, runtime-flagged for what you need. Paid tiers are self-hosted by default &mdash; hosted-by-us is available for any tier.</p>
+      <p>Two ways to start free: Cashbook on your device for sole traders, or self-hosted Community for the full double-entry stack. Same codebase, runtime-flagged for what you need. Paid tiers are self-hosted by default.</p>
     </div>
     <div class="tiers-wrap">
       <div class="tiers-grid">
@@ -202,8 +202,8 @@ body_classes: homepage
         <div class="tier">
           <div class="tier-name">Cashbook</div>
           <div class="tier-price"><span class="free">Free</span></div>
-          <div class="tier-tagline">Hosted by us. Single-entry, sole-trader bookkeeping. No install, no credit card.</div>
-          <a href="https://app.saebooks.com.au/signup?plan=cashbook" class="btn btn-primary">Start Cashbook &mdash; free</a>
+          <div class="tier-tagline">Single-entry sole-trader bookkeeping on your device. Free forever. Want more? Move to Community.</div>
+          <a href="https://dev.saebooks.com.au/getting-started/quickstart/" class="btn btn-primary">Get Cashbook free</a>
           <p class="tier-cta-note" style="margin-top:6px;font-size:0.8rem;opacity:0.75;">Free forever. Upgrade to a full double-entry tier when you outgrow it.</p>
           <ul class="tier-feats">
             <li class="group">Cash in. Cash out. Done.</li>
@@ -214,7 +214,7 @@ body_classes: homepage
             <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Bank statement import (CSV / OFX)</li>
             <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>One-click upgrade to Community or Business &mdash; your data comes with you</li>
           </ul>
-          <div class="tier-foot">Hosted on saebooks.com.au. Australian-owned, AGPLv3 codebase.</div>
+          <div class="tier-foot">On your device. Australian-owned, AGPLv3 codebase.</div>
         </div>
 
         <div class="tier">
